@@ -17,4 +17,4 @@ jobs:
         run: python manage.py test
       - name: Detect bad commit
         if: ${{failure()}}
-        run: python myscript ${{github.workflow_sha}}
+        run: python myscript.py ${{github.workflow_sha}}
